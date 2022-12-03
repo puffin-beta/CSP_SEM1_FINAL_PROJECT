@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 	<head>
 		<title>Minecraft Combat Guide</title>
 	</head>
 	<style>
 		body{
-			background: url("background.jpg");
+			background: url("background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
 			margin: 0;
 			padding: 0;
 			overflow-x: hidden;
 		}
 		.table-container{
-			position: relative;
-			width: 100%;
-			border: 1px solid black;
+			position: static;
+			max-width: 1275px;
+			max-height: 280px;
+			/*border: 1px solid white;*/
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
 		}
-		.table-container .table-item{
+		.table-item{
+			position: relative;
 			display: inline-block;
-			margin: 0px 0px 0px 15%;
-			border: 1px solid black;
+			width: 25%;
+			max-height: 100%;
+			/*border: 1px solid white;*/
 		}
-		.table-container .table-item img{
-			position: relative;
-			top: 0;
-			left: 0;
+		.icon-container{
+			margin: 0 auto;
+			width: 50%;
+			/*border: 1px solid red;*/
+			height: 100%;
 		}
 		h1{
 			text-align: center;
+			color: white;
+			font-size: 3.5em;
 		}
-		.weapons-icon{
-			color: blue;
-		}
-		.armor-icon{
-			width: 80px;
-			height: 160px;
-		}
-		.mobs-icon{
-			width: 80px;
-			height: 160px;
+		.weapons-icon, .armor-icon, .mobs-icon, .enchantments-icon{
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			height: 100%;
 		}
 	</style>
-	<body>
+	<header>
 		<h1>Minecraft Combat Guide</h1>
-		<p>This is the Minecraft Combat guide. It contains information about the armors, weapons, mobs, and enchantments of Minecraft.</p>
+		<p style="color:white; text-align:center;">This is the Minecraft Combat guide. It contains information about the armors, weapons, mobs, and enchantments of Minecraft.</p>
+	</header>
+	<body>
 		<div class="table-container">
-			<div class="table-item"><img class="weapons-icon" src="weapons-icon.svg" alt="Weapons"></div>
-			<div class="table-item"><img class="armor-icon" src="armor-icon.png" alt="Armor"></div>
-			<div class="table-item"><img class="mobs-icon" src="mobs-icon.png" alt="Mobs"></div>
-			<div class="table-item">Item4</div>
+			<div class="table-item">
+				<div class="icon-container"><img class="weapons-icon" src="weapons-icon.png" alt="Weapons"></div>
+			</div>
+			<div class="table-item">
+				<div class="icon-container"><img class="armor-icon" src="armor-icon.png" alt="Armor"></div>
+			</div>
+			<div class="table-item">
+				<div class="icon-container"><img class="mobs-icon" src="mobs-icon.png" alt="Mobs"></div>
+			</div>
+			<div class="table-item">
+				<div class="icon-container"><img class="enchantments-icon" src="enchantments-icon.png" alt="Enchantments"></div>
+			</div>
 		</div>
+		<h1>Hello</h1>
 	</body>
 </html>
