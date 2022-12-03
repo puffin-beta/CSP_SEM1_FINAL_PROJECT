@@ -8,7 +8,7 @@
 		body{
 			background: url("background.png");
 			background-size: cover;
-			background-repeat: no-repeat;
+			/*background-repeat: no-repeat;*/
 			margin: 0;
 			padding: 0;
 			overflow-x: hidden;
@@ -35,16 +35,34 @@
 			/*border: 1px solid red;*/
 			height: 100%;
 		}
+		@media screen and (max-width: 500px){
+			.table-container, .table-item, .icon-container{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		@font-face{
+			font-family: Minecraft;
+			src: url("custom-font.ttf");
+		}
 		h1{
 			text-align: center;
 			color: white;
-			font-size: 3.5em;
+			/*font-size: 3.5em;*/
+			font-size: calc(64px + 6 * ((100vw - 420px) / 680));
+			font-family: Minecraft;
+			font-weight: lighter;
 		}
-		.weapons-icon, .armor-icon, .mobs-icon, .enchantments-icon{
+		.icon{
 			display: inline-block;
 			position: relative;
 			width: 100%;
 			height: 100%;
+			opacity: 0.7;
+		}
+		.icon:hover{
+			opacity: 1.0;
+			cursor: pointer;
 		}
 	</style>
 	<header>
@@ -54,18 +72,21 @@
 	<body>
 		<div class="table-container">
 			<div class="table-item">
-				<div class="icon-container"><img class="weapons-icon" src="weapons-icon.png" alt="Weapons"></div>
+				<div class="icon-container">
+					<a href="weapons.html">
+						<img class="icon" src="weapons-icon.png" alt="Weapons">
+					</a>
+				</div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="armor-icon" src="armor-icon.png" alt="Armor"></div>
+				<div class="icon-container"><img class="icon" src="armor-icon.png" alt="Armor"></div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="mobs-icon" src="mobs-icon.png" alt="Mobs"></div>
+				<div class="icon-container"><img class="icon" src="mobs-icon.png" alt="Mobs"></div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="enchantments-icon" src="enchantments-icon.png" alt="Enchantments"></div>
+				<div class="icon-container"><img class="icon" src="enchantments-icon.png" alt="Enchantments"></div>
 			</div>
 		</div>
-		<h1>Hello</h1>
 	</body>
 </html>
