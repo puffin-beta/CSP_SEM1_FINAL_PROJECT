@@ -6,12 +6,25 @@
 	</head>
 	<style>
 		body{
-			background: url("background.png");
-			background-size: cover;
-			/*background-repeat: no-repeat;*/
 			margin: 0;
 			padding: 0;
 			overflow-x: hidden;
+		}
+		.bg{
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: auto;
+			min-width: 100%;
+			min-height: 100%;
+			opacity: 1;
+			z-index: -1;
+		}
+		@media screen and (max-width: 1050px) { /* Specific to this particular image */
+			.bg {
+				left: 50%;
+				margin-left: -500px;
+			}
 		}
 		.table-container{
 			position: static;
@@ -45,6 +58,9 @@
 			font-family: Minecraft;
 			src: url("custom-font.ttf");
 		}
+		* :not(.bg){
+			z-index: 1;
+		}
 		h1{
 			text-align: center;
 			color: white;
@@ -66,6 +82,7 @@
 		}
 	</style>
 	<header>
+		<img src="background.png" class="bg">
 		<h1>Minecraft Combat Guide</h1>
 		<p style="color:white; text-align:center;">This is the Minecraft Combat guide. It contains information about the armors, weapons, mobs, and enchantments of Minecraft.</p>
 	</header>
@@ -73,7 +90,7 @@
 		<div class="table-container">
 			<div class="table-item">
 				<div class="icon-container">
-					<a href="weapons.html">
+					<a href="weapons-page-assets/weapons.html">
 						<img class="icon" src="weapons-icon.png" alt="Weapons">
 					</a>
 				</div>
@@ -82,7 +99,11 @@
 				<div class="icon-container"><img class="icon" src="armor-icon.png" alt="Armor"></div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="icon" src="mobs-icon.png" alt="Mobs"></div>
+				<div class="icon-container">
+					<a href="mobs-page-assets/mobs.html">
+						<img class="icon" src="mobs-icon.png" alt="Mobs">
+					</a>
+				</div>
 			</div>
 			<div class="table-item">
 				<div class="icon-container"><img class="icon" src="enchantments-icon.png" alt="Enchantments"></div>
