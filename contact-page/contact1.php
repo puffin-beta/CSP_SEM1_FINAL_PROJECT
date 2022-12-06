@@ -6,10 +6,12 @@
 		return $data;
 	}
 	$name = test_input($_GET['name']);
-	echo $name;
 	$pattern = "/^[a-zA-Z-' ]*$/";
 	if (!preg_match($pattern,$name)) {
 		$nameErr = "Only letters and white space allowed";
+		sleep(2);
+		set_time_limit(3);
+			echo "$nameErr";
 		header("Location: contact.php");
 	}
 	else{
