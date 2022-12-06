@@ -69,6 +69,12 @@
 			font-family: Minecraft;
 			font-weight: lighter;
 		}
+		h2{
+			text-align: center;
+			color: white;
+			font-family: Minecraft;
+			font-weight: lighter;
+		}
 		.icon{
 			display: inline-block;
 			position: relative;
@@ -78,6 +84,29 @@
 		}
 		.icon:hover{
 			opacity: 1.0;
+			cursor: pointer;
+		}
+		.contact-prompt{
+			background-color: #a6a6a6;
+			display: flex;
+			margin: 0 auto;
+			opacity: 0.5;
+			width: 50%;
+			position: fixed;
+			bottom: 0;
+		}
+		button{
+			margin: 0 auto;	
+			position: fixed;
+			bottom: 10px;
+			right: auto;
+			width: 75px;
+			height: 75px;
+			font-size: 10px;
+			background: url("Minecraft-creeper-face.jpg")
+			background-size: 75px;
+		}
+		button:hover{
 			cursor: pointer;
 		}
 	</style>
@@ -108,6 +137,7 @@
 			<div class="table-item">
 				<div class="icon-container"><img class="icon" src="enchantments-icon.png" alt="Enchantments"></div>
 			</div>
-		</div>
+		</div><br/>
+		<button id="contact-prompt">CLICK HERE TO SUBMIT QUESTIONS AND/OR FEEDBACK!</button>
 	</body>
 </html>
