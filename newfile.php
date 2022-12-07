@@ -125,7 +125,9 @@
 				</div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="icon" src="armor-icon.png" alt="Armor"></div>
+				<a href="armor-assets/armor.php">
+					<div class="icon-container"><img class="icon" src="armor-icon.png" alt="Armor"></div>
+				</a>
 			</div>
 			<div class="table-item">
 				<div class="icon-container">
