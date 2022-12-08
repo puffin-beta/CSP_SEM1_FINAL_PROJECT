@@ -12,7 +12,7 @@ body {
 }
 </style>
 <body>
-<h1>Weapons of Minecraft</h1>
+<h1> style="color:Black;">Weapons of Minecraft</h1>
 <hr>
 <img src = "weapons_home_icon-removebg-preview.png" width="200" height = "200">
 <p style="color:SaddleBrown; z-index:1">The following page has information on the weapons of Minecraft.</p>
