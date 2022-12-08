@@ -14,8 +14,7 @@ body {
 <body>
 <h1 style="color:White;">Weapons of Minecraft</h1>
 <hr>
-<img src = "weapons_home_icon-removebg-preview.png" width="200" height = "200">
-<p style="color:SaddleBrown; z-index:1">The following page has information on the weapons of Minecraft.</p>
+<p style="color:White; z-index:1">The following page has information on the weapons of Minecraft.</p>
 
 </body>
 </html>
