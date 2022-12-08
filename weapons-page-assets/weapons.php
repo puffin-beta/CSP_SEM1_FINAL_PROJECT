@@ -14,7 +14,7 @@ body {
 <body>
 <h1 style="color:White; font-family: courier; font size: 150%;">Weapons of Minecraft</h1>
 <hr>
-<p style="color:White; font size: 110%; z-index:1">The following page has information on the weapons of Minecraft.</p>
+<p style="color:White; z-index:1">The following page has information on the weapons of Minecraft.</p>
 
 </body>
 </html>
