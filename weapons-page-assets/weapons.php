@@ -20,5 +20,7 @@ img
 <img src="weaponsswordlink.png" alt="SWORDS" style="width:200px;height:200px;"></a>
 <a href="bowsubpage/bowsubpage.php">
 <img src="bowsubpageicon.png" alt="BOWS" style="width:200px;height:200px;"></a>
+<img src="tridenthomepageweapon.png" alt="TRIDENT" style="width:200px;height:200px;"></a>
+<a href="tridentsubpage/tridentsubpage.php">
 </body>
 </html>
