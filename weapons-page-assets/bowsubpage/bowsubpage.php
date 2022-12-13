@@ -2,7 +2,7 @@
 <html>
 <style>
 body {
-	background-image: url('bowbackground.png');
+	background-image: url('../bowbackground.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
