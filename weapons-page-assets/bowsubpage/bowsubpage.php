@@ -17,6 +17,8 @@ img
 
 <h1 style="z-index:1; color:White">Bow</h1>
 <p style= "color:White">This is a paragraph.</p>
+<img src="image11.png" alt bow="Bow stats"> <style="width:200px;height:200px;"></a>
+<a href="bowsubpage/bowsubpage.php">
 
 </body>
 </html>
