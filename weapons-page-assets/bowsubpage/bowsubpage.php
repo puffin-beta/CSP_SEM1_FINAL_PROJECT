@@ -15,8 +15,8 @@ img
 <body>
 <title>Bows</title>
 
-<h1 style="z-index:1">Bow</h1>
-<p>This is a paragraph.</p>
+<h1 style="z-index:1; color:White">Bow</h1>
+<p style= "color:White">This is a paragraph.</p>
 
 </body>
 </html>
