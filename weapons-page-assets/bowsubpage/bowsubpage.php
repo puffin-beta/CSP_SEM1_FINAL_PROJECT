@@ -12,12 +12,10 @@ body {
 }
 img
 </style>
-<head>
-<title>Bows</title>
-</head>
 <body>
+<title>Bows</title>
 
-<h1>Bow</h1>
+<h1 style="z-index:1">Bow</h1>
 <p>This is a paragraph.</p>
 
 </body>
