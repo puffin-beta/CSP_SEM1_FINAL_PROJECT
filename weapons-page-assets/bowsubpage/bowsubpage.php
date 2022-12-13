@@ -11,6 +11,7 @@ body {
 	z-index: 1;
 }
 img
+</style>
 <head>
 <title>Bows</title>
 </head>
