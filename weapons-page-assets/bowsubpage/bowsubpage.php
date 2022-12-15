@@ -10,12 +10,15 @@ body {
 * :not(img){
 	z-index: 1;
 }
-
+@font-face{
+	font-family: Minecraft;
+	src: url("../../custom-font.ttf");
+}
 </style>
 <body>
 <title>Bows</title>
 
-<h1 style="z-index:1; color:White">Bow and Crossbow</h1>
+<h1 style="z-index:1; color:White; font-family:Minecraft; font-weight:lighter;">Bow and Crossbow</h1>
 <img src="../mainbow.png" alt="Bow main image"> <style="width:200px;height:200px;"></a>
 <P style= "color:White">Here are some of the common stats of a bow.</p>
 <img src="../image12.png" alt="Bow stats"> <style="width:200px;height:200px;"></a>
