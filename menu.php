@@ -24,7 +24,11 @@
 				</div>
 			</div>
 			<div class="table-item">
-				<div class="icon-container"><img class="icon" src="enchantments-icon.png" alt="Enchantments"></div>
+				<div class="icon-container">
+					<a href="enchantments-page-assets/enchantments.php">
+						<img class="icon" src="enchantments-icon.png" alt="Enchantments">
+					</a>
+				</div>
 			</div>
 		</div>
 	</body>
