@@ -10,7 +10,9 @@ body {
 * :not(img){
 	z-index: 1;
 }
-img
+img{
+	display: inline-block;
+}
 </style>
 <body>
 <title>Bows</title>
