@@ -10,8 +10,10 @@ body {
 * :not(img){
 	z-index: 1;
 }
-img{
-	display: block;
+img:last-child{
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 </style>
 <body>
