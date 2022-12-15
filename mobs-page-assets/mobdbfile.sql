@@ -1,0 +1,2 @@
+USE MOB_DATA;
+SHOW VARIABLES LIKE 'secure_file_priv';
