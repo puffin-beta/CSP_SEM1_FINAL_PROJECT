@@ -10,9 +10,7 @@ body {
 * :not(img){
 	z-index: 1;
 }
-img{
-	display: block;
-}
+
 </style>
 <body>
 <title>Bows</title>
@@ -24,7 +22,6 @@ img{
 <P style= "color:White"> How long you draw affects the power of the arrow.</p>
 <img src="../image14.png" alt="Bow crafting" style="width:200px;height:200px;"></a>
 <P style= "color:White"> <br> You need 3 sticks, and 3 spider </br> webs in order to craft a bow, arrange in <br> this order to craft.<br></p>
-<<<<<<< HEAD
 <div class="right"> <img src="../crossbowstats.png" alt="Bow crafting" style="width:450px;height:250px;"></a> </div>
 
 </body>
