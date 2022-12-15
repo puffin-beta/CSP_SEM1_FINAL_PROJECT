@@ -24,7 +24,12 @@ img{
 <P style= "color:White"> How long you draw affects the power of the arrow.</p>
 <img src="../image14.png" alt="Bow crafting" style="width:200px;height:200px;"></a>
 <P style= "color:White"> <br> You need 3 sticks, and 3 spider </br> webs in order to craft a bow, arrange in <br> this order to craft.<br></p>
+<<<<<<< HEAD
 <div class="right"> <img src="../crossbowstats.png" alt="Bow crafting" style="width:450px;height:250px;"></a> </div>
+=======
+<img src="../crossbowstats.png" alt="Bow crafting" style="width:450px;height:250px;"></a>
+<p style="color:White"> Chances for obtaining a crossbow in the two different minecraft versions.</p>
+>>>>>>> 476ed302e96397aeaec3410234a222444bc0a05f
 
 </body>
 </html>
