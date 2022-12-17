@@ -17,10 +17,7 @@ img
 <hr>
 <p style="color:White; z-index:1">The following page has information on the weapons of Minecraft.</p>
 <a href="swordsubpage/swordsubpage.php">
-<!--img src="weaponsswordlink.png" alt="SWORDS" style="width:200px;height:200px;"></a>
-=======
-
-=======
+<img src="weaponsswordlink.png" alt="SWORDS" style="width:200px;height:200px;"></a>
 <a href="swordsubpage/swordsubpage.php">
 >>>>>>> 68e5b98fc41647d00c84c88675020261de741156
 <img src="weaponsswordlink.png" alt="SWORDS" style="width:200px;height:200px;"></a>
@@ -28,7 +25,7 @@ img
 <a href="bowsubpage/bowsubpage.php">
 <img src="bowsubpageicon.png" alt="BOWS" style="width:200px;height:200px;"></a>
 <a href="tridentsubpage/tridentsubpage.php">
-<img src="tridenthomepageweapon.png" alt="TRIDENT" style="width:200px;height:200px;"></a-->
+<img src="tridenthomepageweapon.png" alt="TRIDENT" style="width:200px;height:200px;"></a>
 
 </body>
 </html>
