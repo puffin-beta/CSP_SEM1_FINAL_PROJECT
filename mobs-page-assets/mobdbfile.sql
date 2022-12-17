@@ -1,6 +1,7 @@
-CREATE DATABASE MOB_DATA;
+CREATE DATABASE IF NOT EXISTS MOB_DATA;
 USE MOB_DATA;
-CREATE TABLE mob_data(
+SHOW VARIABLES 
+CREATE TABLE IF NOT EXISTS mob_data(
 	mobId int,
     mobName varchar(255),
     mobHealth varchar(255),

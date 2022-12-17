@@ -34,23 +34,20 @@
 			text-align: center;
 			color: white;
 		}
-		.mobs-container, .mobs-row, .icon{
-			border: 1px solid white;
+		.search-container{
+			display: flex;
+			justify-content: center;
 		}
 	</style>
 	<body>
 		<img src="background.png" class="bg">
 		<h1>The various mobs in minecraft</h1>
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
-		<table class="mobs-container">
-			<tr class="mobs-row">
-				<td class="icon">Lorem</td>
-				<td class="icon">Lorem</td>
-			</tr>
-			<tr class="mobs-row">
-				<td class="icon">Ipsum</td>
-				<td class="icon">Ipsum</td>
-			</tr>
-		</table>
+		<div class="search-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button>
+			</form>
+		</div>
 	</body>
 </html>
