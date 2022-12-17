@@ -44,7 +44,7 @@
 		<h1>The various mobs in minecraft</h1>
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
 		<div class="search-container">
-			<form action="/action_page.php">
+			<form action="searchpage.php" method="POST">
 				<input type="text" placeholder="Search.." name="search">
 				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button>
 			</form>
