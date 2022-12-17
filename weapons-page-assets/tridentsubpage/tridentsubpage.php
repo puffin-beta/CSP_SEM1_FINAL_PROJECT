@@ -23,5 +23,7 @@ body {
 <P style= "color:White; font-family:Minecraft; font-weight:lighter;">Here are the common stats of a trident.</p>
 <img src="../tridentstats.png alt="Trident java stats"> <style="width:200px;height:200px;"></a>
 <P style= "color:White; font-family:Minecraft; font-weight:lighter;">Trident stats for the Java edition.</p>
+<img src="../image8.png alt="Trident java stats"> <style="width:200px;height:200px;"></a>
+<P style= "color:White; font-family:Minecraft; font-weight:lighter;">Trident stats for the Bedrock edition.</p>
 </body>
 </html>
