@@ -40,11 +40,29 @@
 		}
 	</style>
 	<body>
+		<?php
+			$database = '';
+			$input = '';
+			if($_SERVER["REQUEST_METHOD"] == "POST"){
+				$database = get_file_contents("../sample.csv");
+				$input = $_POST["search"];
+				if(preg_match($input,$database)){
+					echo "Item found in database!\n";
+				}
+				else{
+					echo "Item not found in database :(\n";
+				}
+			}
+			else{
+				$database = '';
+				$input = '';
+			}
+		?>
 		<img src="background.png" class="bg">
 		<h1>The various mobs in minecraft</h1>
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
 		<div class="search-container">
-			<form action="searchpage.php" method="POST">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
 				<input type="text" placeholder="Search.." name="search">
 				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button>
 			</form>
