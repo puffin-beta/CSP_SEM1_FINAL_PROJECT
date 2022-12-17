@@ -41,21 +41,28 @@
 	</style>
 	<body>
 		<?php
-			$database = '';
-			$input = '';
+			$server = $username = $password = $conn = "";
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
-				$database = get_file_contents("../sample.csv");
-				$input = $_POST["search"];
-				if(preg_match($input,$database)){
-					echo "Item found in database!\n";
+				$server = "localhost";
+				$username = "root";
+				$password = "CSP4oi%Iamgod";
+				$conn = new mysqli($server,$username,$password);
+				if($conn->connect_error){
+					die("Database connection failed: ".$conn->connect_error);
 				}
 				else{
-					echo "Item not found in database :(\n";
+					echo "Connected Successfully to Database.";
+				}
+				$conn->query(include("mobdbfile.sql"));
+				if ($conn->query($cmd) === FALSE){
+					echo "Error in executing the commands.";
+				}
+				else{
+					echo "Everything went well.";
 				}
 			}
 			else{
-				$database = '';
-				$input = '';
+				$server = $username = $password = $conn = "";
 			}
 		?>
 		<img src="background.png" class="bg">
