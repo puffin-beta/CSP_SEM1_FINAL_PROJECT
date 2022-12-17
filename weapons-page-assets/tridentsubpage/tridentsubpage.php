@@ -19,11 +19,8 @@ body {
 <title>Trident</title>
 
 <h1 style="z-index:1; color:White; font-family:Minecraft; font-weight:lighter;">Trident</h1>
-<img src="../image10.png" alt="Trident main image"> <style="width:200px;height:200px;"></a>
+<img src="../image10.png" alt="Trident main image"> >style="width:200px;height:200px;"></a>
 <P style= "color:White; font-family:Minecraft; font-weight:lighter;">Here are the common stats of a trident.</p>
-<img src="../tridentstats.png alt="Trident java stats"> <style="width:200px;height:200px;"></a>
-<P style= "color:White; font-family:Minecraft; font-weight:lighter;">Trident stats for the Java edition.</p>
-<img src="../image8.png alt="Trident java stats"> <style="width:200px;height:200px;"></a>
-<P style= "color:White; font-family:Minecraft; font-weight:lighter;">Trident stats for the Bedrock edition.</p>
+
 </body>
 </html>
