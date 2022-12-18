@@ -42,27 +42,41 @@
 	<body>
 		<?php
 			$server = $username = $password = $conn = "";
+			$active = [];
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
-				$server = "localhost";
-				$username = "root";
-				$password = "CSP4oi%Iamgod";
-				$conn = new mysqli($server,$username,$password);
-				if($conn->connect_error){
-					die("Database connection failed: ".$conn->connect_error);
+				$server = "localhost"; $username = "root"; $password = "CSP4oi%Iamgod";
+				$conn = mysqli_connect($server,$username,$password,"mobdata",3306);
+				if(!$conn){
+					die("Could not connect to ".mysqli_connect_error());
 				}
-				else{
-					echo "Connected Successfully to Database.";
+				$input = $_POST["search"];
+				include("searchengine.php");
+				if ($conn -> multi_query($cmd)) {
+					do {
+						// Store first result set
+						if ($result = $conn -> store_result()) {
+							while ($row = $result -> fetch_row()) {
+								printf("%s\n", $row[0]);
+							}
+							$result -> free_result();
+						}
+						// if there are more result-sets, the print a divider
+						if ($conn -> more_results()) {
+							//printf("-------------\n");
+						}
+						//Prepare next result set
+					} while ($conn -> next_result());
 				}
-				$conn->query(include("mobdbfile.sql"));
-				if ($conn->query($cmd) === FALSE){
-					echo "Error in executing the commands.";
-				}
-				else{
-					echo "Everything went well.";
-				}
+				$search = "select * from mobtable where mobName='$input'";
+				$results = mysqli_query($conn,$search);
+				$row = mysqli_fetch_row($results);
+				$disrow = implode(" ",$row);
+				//echo $disrow;
+				
 			}
 			else{
 				$server = $username = $password = $conn = "";
+				$active = NULL;
 			}
 		?>
 		<img src="background.png" class="bg">
@@ -70,9 +84,18 @@
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
 		<div class="search-container">
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
-				<input type="text" placeholder="Search.." name="search">
+				<input type="text" placeholder="Search.." name="search" style="color:black;" required>
 				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button>
-			</form>
+			</form><br/>
+			<p><?php 
+				if ($_SERVER["REQUEST_METHOD"] == "POST"){
+					echo $disrow; 
+				}
+				else{
+					echo " ";
+				}
+				?>
+			</p>
 		</div>
 	</body>
 </html>

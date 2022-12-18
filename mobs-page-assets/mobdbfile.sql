@@ -1,6 +1,6 @@
+show databases;
 drop table if exists mobtable;
-drop database if exists mobdata;
-create database mobdata;
+create database if not exists mobdata;
 use mobdata;
 create table mobtable(
 	ID int not null auto_increment primary key,
