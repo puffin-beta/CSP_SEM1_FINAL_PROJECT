@@ -38,6 +38,10 @@
 			display: flex;
 			justify-content: center;
 		}
+		.resultalert{
+			text-align: center;
+			font-size: 20px;
+		}
 	</style>
 	<body>
 		<?php
@@ -70,9 +74,6 @@
 				$search = "select * from mobtable where mobName='$input'";
 				$results = mysqli_query($conn,$search);
 				$row = mysqli_fetch_row($results);
-				$disrow = implode(" ",$row);
-				//echo $disrow;
-				
 			}
 			else{
 				$server = $username = $password = $conn = "";
@@ -85,17 +86,24 @@
 		<div class="search-container">
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
 				<input type="text" placeholder="Search.." name="search" style="color:black;" required>
-				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button>
+				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button><br/>
 			</form><br/>
-			<p><?php 
+		</div>
+		<p class="resultalert">
+			<?php 
 				if ($_SERVER["REQUEST_METHOD"] == "POST"){
-					echo $disrow; 
+					if ($row == NULL){
+						echo "No results were found for '$input'";
+					}
+					else{
+						$disrow = implode(" ",$row);
+						echo "Search results for '$input': $disrow";
+					}
 				}
 				else{
 					echo " ";
 				}
-				?>
-			</p>
-		</div>
+			?>
+		</p>
 	</body>
 </html>
