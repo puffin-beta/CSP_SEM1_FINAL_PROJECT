@@ -46,17 +46,8 @@ h2{
 	font-family: Minecraft;
 	font-weight: lighter;
 }
-button{
-	margin: 0 auto;	
-	position: fixed;
-	bottom: 10px;
-	right: auto;
-	width: 75px;
-	height: 75px;
-	font-size: 10px;
-	background: url("Minecraft-creeper-face.jpg")
-	background-size: 75px;
-}
-button:hover{
-	cursor: pointer;
+.contact-button{
+	display: inline-block;
+	height: 300px;
+	border: 2px solid white;
 }
