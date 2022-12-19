@@ -6,6 +6,7 @@
 			color: red;
 		}
 	</style>
+	<script src="contact.js" type="text/javascript"></script>
 	<body>
 		<?php
 			function test_input($data) {
@@ -45,5 +46,6 @@
 			<p>Concern/Feedback: <span>*</span></p><textarea name="concern" rows="10" cols="25"></textarea><br/>
 			<input type="submit" value="submit"></input>
 		</form>
+		<button type="button" onclick="back_to_home()">Back to Home >>></button>
 	</body>
 </html>
