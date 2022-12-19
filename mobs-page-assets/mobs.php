@@ -34,23 +34,76 @@
 			text-align: center;
 			color: white;
 		}
-		.mobs-container, .mobs-row, .icon{
-			border: 1px solid white;
+		.search-container{
+			display: flex;
+			justify-content: center;
+		}
+		.resultalert{
+			text-align: center;
+			font-size: 20px;
 		}
 	</style>
 	<body>
+		<?php
+			$server = $username = $password = $conn = "";
+			$active = [];
+			if($_SERVER["REQUEST_METHOD"] == "POST"){
+				$server = "localhost"; $username = "root"; $password = "CSP4oi%Iamgod";
+				$conn = mysqli_connect($server,$username,$password);
+				if(!$conn){
+					die("Could not connect to ".mysqli_connect_error());
+				}
+				include("searchengine.php");
+				if ($conn -> multi_query($cmd)) {
+					do {
+						// Store first result set
+						if ($result = $conn -> store_result()) {
+							while ($row = $result -> fetch_row()) {
+								printf("%s\n", $row[0]);
+							}
+							$result -> free_result();
+						}
+						// if there are more result-sets, the print a divider
+						if ($conn -> more_results()) {
+							//printf("-------------\n");
+						}
+						//Prepare next result set
+					} while ($conn -> next_result());
+				}
+				$input = $_POST["search"];
+				$search = "select * from mobtable where mobName='$input'";
+				$results = mysqli_query($conn,$search);
+				$row = mysqli_fetch_row($results);
+			}
+			else{
+				$server = $username = $password = $conn = "";
+				$active = NULL;
+			}
+		?>
 		<img src="background.png" class="bg">
 		<h1>The various mobs in minecraft</h1>
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
-		<table class="mobs-container">
-			<tr class="mobs-row">
-				<td class="icon">Lorem</td>
-				<td class="icon">Lorem</td>
-			</tr>
-			<tr class="mobs-row">
-				<td class="icon">Ipsum</td>
-				<td class="icon">Ipsum</td>
-			</tr>
-		</table>
+		<div class="search-container">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
+				<input type="text" placeholder="Search For a Mob.." name="search" style="color:black;" required>
+				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button><br/>
+			</form><br/>
+		</div>
+		<p class="resultalert">
+			<?php 
+				if ($_SERVER["REQUEST_METHOD"] == "POST"){
+					if ($row == NULL){
+						echo "No results were found for '$input'";
+					}
+					else{
+						$disrow = implode(" ",$row);
+						echo "Search results for '$input': $disrow";
+					}
+				}
+				else{
+					echo " ";
+				}
+			?>
+		</p>
 	</body>
 </html>

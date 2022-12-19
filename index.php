@@ -12,6 +12,11 @@
 	</header>
 	<body>
 		<?php include("menu.php"); ?><br/>
-		<button id="contact-prompt"><a href="contact-page/contact.php">CLICK HERE TO SUBMIT QUESTIONS AND/OR FEEDBACK!</a></button>
+		<button type="button" onclick="loadpage()">Click ME</button>
 	</body>
+	<script type="text/javascript">
+		function loadpage(){
+			location.replace("contact-page/contact.php");
+		}
+	</script>
 </html>
