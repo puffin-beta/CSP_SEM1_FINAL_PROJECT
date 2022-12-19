@@ -49,11 +49,10 @@
 			$active = [];
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
 				$server = "localhost"; $username = "root"; $password = "CSP4oi%Iamgod";
-				$conn = mysqli_connect($server,$username,$password,"mobdata",3306);
+				$conn = mysqli_connect($server,$username,$password);
 				if(!$conn){
 					die("Could not connect to ".mysqli_connect_error());
 				}
-				$input = $_POST["search"];
 				include("searchengine.php");
 				if ($conn -> multi_query($cmd)) {
 					do {
@@ -71,6 +70,7 @@
 						//Prepare next result set
 					} while ($conn -> next_result());
 				}
+				$input = $_POST["search"];
 				$search = "select * from mobtable where mobName='$input'";
 				$results = mysqli_query($conn,$search);
 				$row = mysqli_fetch_row($results);
@@ -85,7 +85,7 @@
 		<p style="text-align:center">Note that this is only about hostile mobs.</p>
 		<div class="search-container">
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
-				<input type="text" placeholder="Search.." name="search" style="color:black;" required>
+				<input type="text" placeholder="Search For a Mob.." name="search" style="color:black;" required>
 				<button type="submit" style="color:black"><i class="fa fa-search"></i>Search</button><br/>
 			</form><br/>
 		</div>
