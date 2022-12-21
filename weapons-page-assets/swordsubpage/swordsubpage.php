@@ -1,3 +1,4 @@
+<!-- subpage -->
 <html>
 <style>
 body {
@@ -13,12 +14,14 @@ body {
 	font-family: Minecraft;
 	src: url("../../custom-font.ttf");
 }
+	<!--style for the page-->
 </style>
 <body>
 <title>Bows</title>
 
 <h1 style="z-index:1; color:White; font-family:Minecraft; font-weight:lighter; font-size:50;text-align:center">SWORDS</h1>
 <P style="color:White;font-size:25;font-family:Minecraft;font-wight;lighter;">Stats:</P>
+<!--The title has a css font-->
 <img src="pic1.png" alt="Sword main image"> <style="width:200px;height:200px;"></a>
 <P style= "color:Green">Here are the main stats for the different sword variants in Minecraft</p>
 <img src="pic2.png" alt="Sword stats"> <style="width:200px;height:200px;"></a>
@@ -35,5 +38,6 @@ body {
 <P style="color:White;font-size:25;font-family:Minecraft;font-wight;lighter;">Upgrading:</P>
 <img src="pic6.png" alt="Sword main"> <style="width:200px;height:200px;"></a>
 <P style="color:Green">This is a demonstration for upgrading a sword to the most powerful Netherite<br/>Variant</P>
+<!--Image with stats and basic description of image-->
 </body>
 </html>

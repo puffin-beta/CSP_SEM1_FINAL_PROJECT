@@ -6,4 +6,5 @@
 			echo "Thanks for submitting!";
 		?>
 	</body>
+	<!--message for email page-->
 </html>

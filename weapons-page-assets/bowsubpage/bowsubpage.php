@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- subpage -->
 <html>
 <style>
 body {
@@ -14,6 +15,7 @@ body {
 	font-family: Minecraft;
 	src: url("../../custom-font.ttf");
 }
+	<!--style for the page-->
 </style>
 <body>
 <title>Bows</title>
@@ -33,5 +35,6 @@ body {
 <p style="color:Blue"> Here are the common stats of a crossbow</p>
 <img src="../crossbowstats.png" alt="Bow crafting" style="width:450px;height:250px;"></a> </div>
 <P style= "color:Blue"> The chances of finding crossbows in the following locations varies per edition.</p>
+<!--Image with stats and basic description of image-->
 </body>
 </html>
