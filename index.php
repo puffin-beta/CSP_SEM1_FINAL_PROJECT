@@ -16,7 +16,7 @@
 	</header>
 	<body>
 		<?php include("menu.php"); ?><br/>
-		<button type="button" onclick="loadpage()">Click ME</button>
+		<button type="button" onclick="loadpage()">Have questions, concerns, or feedback? Click here to submit your thoughts!</button>
 		<!-- Button for email page -->
 	</body>
 	<script type="text/javascript">
