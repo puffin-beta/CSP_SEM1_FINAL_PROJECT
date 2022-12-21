@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <!--this is the page for the -->
 <html>
-	<head></head>
+	<head>
+		<title>Feedback Form</title>
+	</head>
 	<style>
 		span{
 			color: red;

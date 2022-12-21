@@ -18,14 +18,6 @@
 			$results = mysqli_query($conn,$show);
 			$row = mysqli_fetch_row($results);
 		?>
-		<p><?php 
-			// Show results
-			$disrow = "";
-			$disrow = implode(" ",$row);
-			echo $disrow;
-		?>
-		</p>
-		<!--message for email page-->
 	</body>
 	
 </html>

@@ -12,14 +12,16 @@
 	<header>
 		<img src="background.png" class="bg">
 		<h1>Minecraft Combat Guide</h1>
-		<p style="color:white; text-align:center;">This is the Minecraft Combat guide. It contains information about the armors, weapons, mobs, and enchantments of Minecraft.</p>
+		<p style="color:white; text-align:center;">This is the Minecraft Combat guide. It contains information about the armors, weapons, mobs, and enchantments of Minecraft.
+		click the icons to learn more about that subject (sword is weapons, etc.)</p>
 	</header>
 	<body>
-		<?php include("menu.php"); ?><br/>
+		<!-- The external menu --><?php include("menu.php"); ?><br/>
 		<button type="button" onclick="loadpage()">Have questions, concerns, or feedback? Click here to submit your thoughts!</button>
 		<!-- Button for email page -->
 	</body>
 	<script type="text/javascript">
+		//Redirect to feedback form
 		function loadpage(){
 			location.replace("contact-page/contact.php");
 		}
