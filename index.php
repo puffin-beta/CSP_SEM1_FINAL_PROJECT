@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--Ranjith Saravanan, Rajveer Kharod, Bruce Rili
+	Website
+	Period 3
+	Our website is a encyclopedia for the video game Minecraft, mainly focusing on the combat aspect of the game.-->
 <html>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 	<link href="index.css" rel="stylesheet">
