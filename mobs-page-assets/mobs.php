@@ -48,7 +48,7 @@
 			$server = $username = $password = $conn = "";
 			$active = [];
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
-				$server = "localhost"; $username = "root"; $password = "CSP401"; //Password for school computer: "CSP401" Password for my home computer: "CSP4oi%Iamgod"
+				$server = "localhost"; $username = "root"; $password = "CSP4oi%Iamgod"; //Password for school computer: "CSP401" Password for my home computer: "CSP4oi%Iamgod"
 				$conn = mysqli_connect($server,$username,$password);
 				if(!$conn){
 					die("Could not connect to ".mysqli_connect_error());
