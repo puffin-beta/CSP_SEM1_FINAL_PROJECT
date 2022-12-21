@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	overflow-x: hidden;
 }
+/* Provides background image responsiveness */
 .bg{
 	position: fixed;
 	top: 0;
@@ -13,30 +14,34 @@ body{
 	opacity: 1;
 	z-index: -1;
 }
+/* For the responsive background filling up the entire screen */
 @media screen and (max-width: 1050px) { /* Specific to this particular image */
 	.bg {
 		left: 50%;
 		margin-left: -500px;
 	}
 }
+/* For the icon table to be responsive */
 @media screen and (max-width: 500px){
 	.table-container, .table-item, .icon-container{
 		display: block;
 		margin: 0 auto;
 	}
 }
+/* For the custom Minecraft font */
 @font-face{
 	font-family: Minecraft;
 	src: url("custom-font.ttf");
 }
+/* Make sure everything shows through background */
 * :not(.bg){
 	z-index: 1;
 }
+/* Styling for headers */
 h1{
 	text-align: center;
 	color: white;
-	/*font-size: 3.5em;*/
-	font-size: calc(64px + 6 * ((100vw - 420px) / 680));
+	font-size: calc(64px + 6 * ((100vw - 420px) / 680)); /* Makes header dependent on screen size */
 	font-family: Minecraft;
 	font-weight: lighter;
 }
@@ -46,6 +51,7 @@ h2{
 	font-family: Minecraft;
 	font-weight: lighter;
 }
+/* Button for link to feedback form page */
 .contact-button{
 	display: inline-block;
 	height: 300px;

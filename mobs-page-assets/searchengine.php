@@ -1,5 +1,9 @@
 <?php
+	// All the SQL commands to create the mob database on command
+	
+	// Creates empty command $cmd
 	$cmd = "";
+	
 	$cmd .= "create database if not exists mobdata;";
 	$cmd .= "use mobdata;";
 	$cmd .= "create table if not exists mobtable(
@@ -12,6 +16,10 @@
 		primary key (mobid)
 		);";
 	$cmd .= "delete from mobtable;";
+	
+	/* Searchable mobs: Zombie, Wither Skeleton, Skeleton, Spider, Witch,
+	Blaze, Drowned, Pillager, Ghast, Creeper, Slime, Enderman, Ender Dragon,
+	Wither, and Warden*/
 	$cmd .= "insert into mobtable(mobid,mobName,Health,Spawn,AvgDmg,Loot) 
 			values 
 			(
