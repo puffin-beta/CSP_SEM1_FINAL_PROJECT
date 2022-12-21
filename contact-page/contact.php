@@ -48,5 +48,8 @@
 			<input type="submit" value="submit"></input>
 		</form>
 		<button type="button" onclick="back_to_home()">Back to Home >>></button>
+		<div class="parcontnav">
+ </div>
+  <button id="modeswitch" onclick="changetheme()">Light Mode</button>
 	</body>
 </html>
