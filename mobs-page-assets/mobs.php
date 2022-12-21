@@ -50,6 +50,7 @@
 			text-align: center;
 			font-size: 20px;
 		}
+	<!-- styling -->
 	</style>
 	<body>
 		<?php
