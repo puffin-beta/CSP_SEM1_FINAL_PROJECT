@@ -16,6 +16,8 @@ img
 <h1 style="color:White; font-family: courier; font size: 150%;">Weapons of Minecraft</h1>
 <br>
 <p style="color:White; z-index:1">The following page has information on the weapons of Minecraft.</p>
+
+<!-- Miniature version of the icon table used in the home page -->
 <a href="swordsubpage/swordsubpage.php">
 	<img src="weaponsswordlink.png" alt="SWORDS" style="width:200px;height:200px;">
 </a>

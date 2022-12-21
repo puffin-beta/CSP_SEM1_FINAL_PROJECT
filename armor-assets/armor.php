@@ -6,17 +6,21 @@ body {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
+/* make everything show */
 * :not(img){
 	z-index: 1;
 }
+/* custom font */
 @font-face{
 	font-family: Minecraft;
 	src: url("../custom-font.ttf");
 }
 </style>
 <body>
-<title>Bows</title>
+<title>Armor</title>
 
+<!-- Information about armor, like crafting, usage, protection, etc. accompanied with images 
+in a nostalgic Minecraft blog post style -->
 <h1 style="z-index:1; color:White; font-family:Minecraft; font-weight:lighter; font-size:50;text-align:center">ARMOR</h1>
 <P style="color:White;font-size:25;font-family:Minecraft;font-wight;lighter;">How to Craft:</P>
 <img src="arm1.png" alt="Armor main image"> <style="width:200px;height:200px;"></a>
