@@ -11,32 +11,10 @@
 			}
 			echo "Thanks for submitting!";
 			
-			// SQL database commands
-			require("responsesdb.php");
-			
-			/* This code is cpoied from w3schools. This chunk of code allows our
-				website to process multiple SQL commands without creating numerous 
-				$conn->query() statements one after the other. 
-			Link to code: https://www.w3schools.com/php/func_mysqli_multi_query.asp*/
-			if ($conn -> multi_query($com)) {
-				do {
-					// Store first result set
-					if ($result = $conn -> store_result()) {
-						while ($row = $result -> fetch_row()) {
-							printf("%s\n", $row[0]);
-						}
-						$result -> free_result();
-					}
-					// if there are more result-sets, the print a divider
-					if ($conn -> more_results()) {
-						//printf("-------------\n");
-					}
-					//Prepare next result set
-				} while ($conn -> next_result());
-			}
-			
 			// Retrieve data from database
-			$show = "select * from response_table";
+			$use = "use response;";
+			$results = mysqli_query($conn,$use);
+			$show = "select subName from response_table;";
 			$results = mysqli_query($conn,$show);
 			$row = mysqli_fetch_row($results);
 		?>
